@@ -1,0 +1,34 @@
+
+
+
+
+<div id="products" class="content-section" ng-init="init()">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h1 class="section-title">{{title}}</h1>
+                </div> <!-- /.col-md-12 -->
+            </div> <!-- /.row -->
+            <div class="row">
+                
+
+                <div class="col-md-3 col-sm-6" ng-repeat="genre in genres | orderBy:randomSort" >
+                    <div class="product-item">
+                        <div class="item-thumb">
+                            <span class="note"></span>
+                            <div class="overlay">
+                                <div class="overlay-inner">
+                                    <a class="view-detail" href="#add_tracks?selectedgenre={{genre.name}}">Create a {{genre.name}} playlist</a>
+                                </div>
+                            </div> <!-- /.overlay -->
+                            <img ng-src="{{genre.image}}" alt="">
+                        </div> <!-- /.item-thumb -->
+                        <h3>{{genre.name}}</h3>
+                        <span><a href="#add_tracks?selectedgenre={{genre.name}}">Click here to create a <em class="price">{{genre.name}}</em> playlist</a></span>
+                    </div> <!-- /.product-item -->
+                </div> <!-- /.col-md-3 -->
+                
+                
+            </div> <!-- /.row -->
+        </div> <!-- /.container -->
+    </div> <!-- /#products -->

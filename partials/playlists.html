@@ -1,0 +1,36 @@
+
+<div id="products" class="content-section" ng-init="init()">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h1 class="section-title">{{title}}</h1>
+                </div> <!-- /.col-md-12 -->
+            </div> <!-- /.row -->
+            <div class="row">
+                <div class="col-md-3 col-sm-6" ng-repeat="playlist in playlists  | filter:query as results" >
+                    <div class="product-item">
+                        <div class="item-thumb">
+                            <span class="note"></span>
+                            <div class="overlay">
+                                <div class="overlay-inner">
+                                    <a class="view-detail" ng-click="setPlaylistNameAndNavigate($index,playlist.$id,playlist.playlistName,playlist.playlistCurator,playlist.playlistCreated,playlist.playlistGenre)">{{playlist.playlistName}}</a>
+                                    <a ng-click="setPlaylistNameAndNavigate($index,playlist.$id,playlist.playlistName,playlist.playlistCurator,playlist.playlistCreated,playlist.playlistGenre)">check out this playlist >></a>
+                                    <br />
+                                </div>
+                            </div> <!-- /.overlay -->
+                                <!-- refactor this as per stack overflow question -->
+                                <span ng-repeat="genre in genres | filter:{name:playlist.playlistGenre}">  
+                                    <img ng-src="{{genre.image}}">  
+                                </span>
+                        </div> <!-- /.item-thumb -->
+                        <!--<span>{{track.name}} - <em class="price">{{track.artist_name}}</em></span>-->
+                    </div> <!-- /.product-item -->
+                </div> <!-- /.col-md-3 -->
+            </div> <!-- /.row -->
+            <!-- load more button-->
+            
+            <!-- load more button-->
+        </div> <!-- /.container -->
+    </div> <!-- /#products -->
+
+    

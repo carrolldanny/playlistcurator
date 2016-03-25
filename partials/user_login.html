@@ -1,0 +1,50 @@
+
+    <div id="products" class="content-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h1 class="section-title">{{title}}</h1>
+                </div> <!-- /.col-md-12 -->
+            </div> <!-- /.row -->
+            <div class="row">
+                <div id="contact" class="content-section">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-3">
+                                
+                            </div> <!-- /.col-md-6 -->
+                            <div class="col-md-8 col-sm-6">
+                                <div class="row contact-form">
+                                    <form ng-submit="userLogin()">
+                                        <fieldset class="col-md-12">
+                                            <input ng-model="user.email"  type="email" name="email" id="email" placeholder="Enter Email Address" required autofocus="">
+                                        </fieldset>
+                                        <fieldset class="col-md-12">
+                                            <input ng-model="user.password"  type="password" name="password" id="password" placeholder="Enter Password" required>
+                                        </fieldset>
+                                        <fieldset class="col-md-2">
+                                            
+                                        </fieldset>                                       
+
+                                        <fieldset class="col-md-4">
+                                                <button  class="action-button shadow animate green">login</button>
+
+                                                
+
+                                                <a ng-href="#/password_reset" >Forget your Password?</a>
+                                            
+                                        </fieldset>   
+                                        <fieldset class="col-md-4">
+                                            
+                                        </fieldset>
+                                    </form>
+                                </div> <!-- /.contact-form -->
+                            </div> <!-- /.col-md-6 -->
+                        </div> <!-- /.row -->
+                    </div> <!-- /.container -->
+                </div> <!-- /#products -->
+            </div> <!-- /.row -->
+        </div> <!-- /.container -->
+    </div> <!-- /#products -->
+
+    

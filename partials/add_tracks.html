@@ -1,0 +1,41 @@
+
+<div id="products" class="content-section" ng-init="init()">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h1 class="section-title">{{title}}</h1>
+                </div> <!-- /.col-md-12 -->
+            </div> <!-- /.row -->
+            <div class="row">
+                
+
+                <div class="col-md-3 col-sm-6" ng-repeat="track in tracks | orderBy:randomSort" >
+                    <div class="product-item">
+                        <div class="item-thumb" ng-class="{'selectedTrack': isActive, '': !isActive}"> 
+                            <span class="note"></span>
+                            <div ng-class="{'overlaySelected': isActive, 'overlay': !isActive}">
+                                <div class="overlay-inner">
+                                    <a class="view-detail" href="#add_tracks?selectedgenre={{genre.name}}">Listen/Add <em class="text-muted">"{{track.name}}"</em> by <em class="text-muted">{{track.artist_name}}</em> to the playlist</a>
+                                    <a id="playTrack_{{$index}}" class="play_track" ng-click="controlTrack(track.id,$index);">&nbsp;</a>
+                                    <a ng-class="{'remove_track': isActive, 'add_track': !isActive}" ng-click="toggle(track.id, track.image, track.name, track.artist_name,$index,$event); isActive = !isActive;" 
+                                    id="addTrack_{{$index}}" data-track-auto-key="">&nbsp;</a>
+                                </div>
+                            </div> <!-- /.overlay -->
+                            <img ng-src="{{track.image}}">
+                        </div> <!-- /.item-thumb -->
+                        <h3>
+                        <audio id="audioPreview">
+                            <source></source>
+                            Your browser wont play HTML 5 audio
+                        </audio>
+                        </h3>
+                        <!--<span>{{track.name}} - <em class="price">{{track.artist_name}}</em></span>-->
+                    </div> <!-- /.product-item -->
+                </div> <!-- /.col-md-3 -->
+            </div> <!-- /.row -->
+            <!-- load more button-->
+            <span class="load_more"><input class="button" value="load more tracks" ng-click="getTracks();" /></span>
+            <!-- load more button-->
+        </div> <!-- /.container -->
+    </div> <!-- /#products -->
+

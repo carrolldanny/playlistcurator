@@ -1,0 +1,89 @@
+
+<div id="products" class="content-section" ng-init="init()">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h1 class="section-title">{{title}}</h1>
+                </div> <!-- /.col-md-12 -->
+            </div> <!-- /.row -->
+            <div class="row">
+                
+                    
+
+                <div class="col-md-2 col-sm-3">
+                    <div class="item-small">
+                        <h3>Now Playing...</h3>
+                        <img ng-src="{{tracks[currentlyPlayingTrack].image}}" alt="{{tracks[currentlyPlayingTrack].name}} by {{tracks[currentlyPlayingTrack].artist_name}}">
+                        <h5>Track : <strong>{{tracks[currentlyPlayingTrack].name}}</strong></h5>
+                        <h5>Artist : <strong>{{tracks[currentlyPlayingTrack].artist_name}}</strong></h5>
+                        <h5>Released : <strong>{{tracks[currentlyPlayingTrack].releasedate | date:'dd/MM/yyyy'}}</strong></h5>
+                         <audio controls 
+                                id="currentTrack"
+                                ontimeupdate="document.getElementById('tracktime').innerHTML = Math.floor(this.currentTime);">
+                         <source></source> 
+                         <p>Your browser does not support native audio, but you can <a href="{{tracks[currentlyPlayingTrack].audio}}">download this MP3</a> to listen on your device.</p>
+                         </audio>
+                         <h3 id="tracktime">0:00</h3>
+                    </div> <!-- /.item-small -->
+                </div>
+
+                <div class="col-md-8 col-sm-6">
+                
+                <table id="playlistTable">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Track</th>
+                            <th>Artist</th>
+                            <th>Duration</th>
+                            <th></th>
+                        </tr>
+                    </thead>                        
+                    <tbody>
+                        <tr ng-repeat="track in tracks">
+                            <td data-th="Image"><img ng-src="{{track.image}}" width="100px" height="100px" ></td>
+                            <td data-th="Track">{{ track.name }}</td>
+                            <td data-th="Artist">{{ track.artist_name }}</td>
+                            <td data-th="Duration">{{ track.duration | secondsToDateTime | date:'mm:ss' }}</td>
+                            <td data-th="Controls"><a 
+                                id="playButton_{{track.id}}" 
+                                class="play_track"
+                                ng-class="{pause_track: $index == selected}"
+                                ng-click='controlTrack(tracks[$index].id, $index); '>&nbsp;</a></td>
+                        </tr>
+                    </tbody>                        
+                </table>
+                
+                    <a ng-click="editPlaylist()"  class="action-button shadow animate green">Edit</a>    
+
+
+                </div>
+                <!-- playlist details -->
+                <div class="col-md-2">
+                    <div class="item-small">
+                        <h3>Playlist Details</h3>
+                        <img ng-src="{{genreImageDisplay}}" alt="Genre Image">
+                        <h4>{{title}}</h4>
+                        <h5>Curator : <br /><strong>{{playlistCurator}}</strong></h5>
+                        <h5>Created : <strong>{{playlistCreated | date:'dd/MM/yyyy'}}</strong></h5>
+                        <h4>Share this Playlist:</h4>
+                        <h5><a href=""  class="fb" >&nbsp;
+                            </a>
+                            <a href="" class="tw" socialshare
+                                socialshare-provider="twitter"
+                                socialshare-text="Check out {{title}} created by {{playlistCurator}}"
+                                socialshare-hashtags="{{playlistGenre}}, Music"
+                                socialshare-url="{{currentPathToShare}}">&nbsp;
+                            </a>
+                        </h5>
+                    </div> <!-- /.item-small -->
+                </div>
+                
+            </div> <!-- /.row -->
+            <!-- edit this playlist -->            
+            
+            <!-- edit this playlist -->            
+        </div> <!-- /.container -->
+    </div> <!-- /#products -->
+
+    

@@ -1,0 +1,172 @@
+/**
+ * BxSlider v4.0 - Fully loaded, responsive content slider
+ * http://bxslider.com
+ *
+ * Written by: Steven Wanderski, 2012
+ * http://stevenwanderski.com
+ * (while drinking Belgian ales and listening to jazz)
+ *
+ * CEO and founder of bxCreative, LTD
+ * http://bxcreative.com
+ */
+/** RESET AND LAYOUT
+===================================*/
+.bx-wrapper {
+  position: relative;
+  margin: 0 auto;
+  padding: 0;
+  *zoom: 1;
+}
+
+.bx-wrapper img {
+  width: 100%;
+  max-width: 100%;
+  display: block;
+}
+
+/* -- playlist display table options --*/
+
+audio { 
+	width: 125px; 
+}
+#tracktime {
+	display:none;
+}
+
+.fb {
+	background-image: url("https://cdn-static.findly.com/wp-content/uploads/sites/43/2015/12/facebook-40x40.png");
+    background-color: #ffffff;
+    padding: 10px 15px 10px 15px;
+    margin: 5px;
+}
+.tw {
+	background-color: #ffffff;
+	background-image: url("https://cdn-static.findly.com/wp-content/uploads/sites/43/2015/12/twitter-icon-40x40.png");
+	padding: 10px 15px 10px 15px;
+    margin: 5px;
+}
+
+
+table#playlistTable caption {
+	font-size: 2rem;
+	color: #444;
+	margin: 1rem;
+	
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center left, center right;
+}
+table#playlistTable {
+	border-collapse: collapse;
+	font-family: "Open Sans", Arial, sans-serif;
+	font-weight: 100;
+	background: #333;
+	color: #fff;
+	text-rendering: optimizeLegibility;
+	border-radius: 5px;
+}
+table#playlistTable thead th { 
+	font-weight: 600; 
+}
+table#playlistTable thead th, 
+	table#playlistTable tbody td {
+	padding: .8rem;
+	font-size: 1.4rem; 
+}
+table#playlistTable tbody td {
+	padding: .8rem;
+	font-size: 1.4rem;
+	color: #444;
+	background: #eee;
+}
+table#playlistTable tbody tr:not(:last-child) {
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd; 
+}
+/* synch the breakpoints on the responsiveness on this table */
+
+@media screen and (max-width: 600px) {
+	table#playlistTable caption {
+		background-image: none;
+	}
+	table#playlistTable thead {
+		display: none; 
+	}
+	table#playlistTable tbody td {
+		display: block;
+		padding: .6rem; 
+	}
+	table#playlistTable tbody tr td:first-child {
+		background: #333;
+		color: #fff; 
+	}
+	table#playlistTable tbody td:before {
+		content: attr(data-th);
+		font-weight: bold;
+		display: inline-block;
+		width: 6rem; 
+	}
+}
+
+
+/* login button */
+.animate
+{
+	transition: all 0.1s;
+	-webkit-transition: all 0.1s;
+}
+
+.action-button
+{
+	position: relative;
+	padding: 10px 40px;
+  	margin: 0px 10px 10px 0px;
+  	float: left;
+	border-radius: 10px;
+	font-family: "Open Sans", Arial, sans-serif;
+	font-size: 25px;
+	color: #FFF;
+	text-decoration: none;	
+}
+
+.blue
+{
+	background-color: #3498DB;
+	border-bottom: 5px solid #2980B9;
+	text-shadow: 0px -2px #2980B9;
+}
+
+.red
+{
+	background-color: #E74C3C;
+	border-bottom: 5px solid #BD3E31;
+	text-shadow: 0px -2px #BD3E31;
+}
+
+.green
+{
+	background-color: #82BF56;
+	border-bottom: 5px solid #669644;
+	text-shadow: 0px -2px #669644;
+	cursor: pointer;
+}
+.password_reset
+{
+	margin-top: 20px;
+	cursor: pointer;
+}
+
+.yellow
+{
+	background-color: #F2CF66;
+	border-bottom: 5px solid #D1B358;
+	text-shadow: 0px -2px #D1B358;
+}
+
+.action-button:active
+{
+	transform: translate(0px,5px);
+  -webkit-transform: translate(0px,5px);
+	border-bottom: 1px solid;
+}
+
