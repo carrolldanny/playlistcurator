@@ -12,11 +12,11 @@ Because the Jamendo music service is populated only by new, unsigned and unpubli
 
  . . . . . List of user features (excluding user registration and authentication) . . . . 
  
- + Feature 1
- + Feature 2
- + Feature 3
- + etc
- + etc
+ + Consumes Jamendo music providers data API
+ + Streams Jamendo music providers music files
+ + Creates playlists in Firebase as music provider's API doesn't have facilitiy to dynamically create a playlist
+ + Shares playlist via users social media accounts
+ 
 
 ###Installation requirements.
 . . . .  List of software used to develop the app . . . . . . . 
