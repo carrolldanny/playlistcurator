@@ -73,4 +73,7 @@ A simple diagram showing the app's component design, in particular controllers a
 
 [image1]: ./model.png
 [image2]: ./design.png
-[image3]: ./screen.png
+[image3]: http://dancar38.100webcustomers.com/screenshots/create_playlist.png
+[image4]: http://dancar38.100webcustomers.com/screenshots/create_playlist.png
+[image3]: http://dancar38.100webcustomers.com/screenshots/create_playlist.png
+[image6]: http://dancar38.100webcustomers.com/screenshots/create_playlist.png
