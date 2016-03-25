@@ -29,9 +29,6 @@ Because the Jamendo music service is populated only by new, unsigned and unpubli
 + Angular Notifications
 
 
-
-. . . . . . Also, explain (to a third party) what steps one must take to run your app after cloning it from the repository, e.g. any non-standard software installation ; any environment setup; how to start app; where to view app in browser . . . . . . . 
-
 To get this project up and running, clone it, start your webserver in the playlistcurator folder (where you see the index.html file). Then in your favorite browser, visit :
 
 localhost:8080/#/
