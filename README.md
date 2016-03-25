@@ -9,8 +9,6 @@ At any time, the user can visit the lists they have created and enjoy them. They
 
 Because the Jamendo music service is populated only by new, unsigned and unpublicized music creators, users are bound to discover some new talent using Playlist Curator. This is why the playlists’ starting point is the genre type.
 
-
- . . . . . List of user features (excluding user registration and authentication) . . . . 
  
  + Consumes Jamendo music providers data API
  + Streams Jamendo music providers music files
@@ -20,10 +18,11 @@ Because the Jamendo music service is populated only by new, unsigned and unpubli
 
 ###Installation requirements.
 . . . .  List of software used to develop the app . . . . . . . 
-+ AngularJS 1.x
-+ Bootstrap 3
-+ etc
-+ etc 
++ AngularJS 1.4.5
++ Bootstrap 3.1.1
++ Firebase
++ Angular Socialshare
++ Angular Notifications
 
 
 . . . . . . Also, explain (to a third party) what steps one must take to run your app after cloning it from the repository, e.g. any non-standard software installation ; any environment setup; how to start app; where to view app in browser . . . . . . . 
