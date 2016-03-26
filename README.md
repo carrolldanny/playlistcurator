@@ -81,13 +81,12 @@ Firebase was used for user accounts and authentication, however since the Jamend
 Google URL shortener is used to shorten the URL's before they get shared out on Social Media (Only Twitter implemented as I don’t have a Facebook account to test that one, but the implementation is the same - just properties on the link)
 
 
-
-
 ###Independent learning.
 
 + ngCookies - I used this to store the uid of the logged in user so their previous playlists can be retrieved easily. It gets destroyed when they logout
 + ngNotify - This is used when a track is added or removed from a playlist - different classes demoting different action as are applied.
 + Angular Social Sharing - For sharing the created playlists with friends.
++ HTML5 Audio Player - standard feature of HTML5 but few soild for streaming audio files in an instance such as this.
 
 [image1]: ./model.png
 [image2]: ./design.png
