@@ -58,10 +58,10 @@ Adding songs to the list - give them a quick listen, remove them if you change y
 ![][image4]
 
 Previous created playlists
-![][image4]
+![][image5]
 
 Playing back a list and sharing it on Twitter
-![][image4]
+![][image6]
 
 ###Routing.
 
