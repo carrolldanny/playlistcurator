@@ -66,10 +66,14 @@ Playing back a list and sharing it on Twitter
 ###Routing.
 
 . . . . List each route supported and state the associated view . . . . . 
-+ /foos - displays all published foos
-+ /foos/:id - detail view of a particular foo (:id)
-+ etc
-+ etc
++ / - Login page
++ /password_reset - Allows user to trigger password reset - email sent to their registered address
++ /logout - ends user's playlist creation session
++ /select_genre - the start of the playlist creation process - pick the style you want
++ /add_tracks - preview and add some music to your list, as many songs as you like
++ /playlists - a list of the playlists you have created so far
++ /playlist - the particular playlist you have selected to playback/share
++ /edit_playlist - make changes to a previously created playlist (not complete - ran out of time)
 
 ###Extra features
 
