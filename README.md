@@ -65,7 +65,6 @@ Playing back a list and sharing it on Twitter
 
 ###Routing.
 
-. . . . List each route supported and state the associated view . . . . . 
 + / - Login page
 + /password_reset - Allows user to trigger password reset - email sent to their registered address
 + /logout - ends user's playlist creation session
@@ -77,7 +76,12 @@ Playing back a list and sharing it on Twitter
 
 ###Extra features
 
-. . . . . Briefly explain any non-standard features, functional or non-functional (e.g. user registration, authentication) developed for the app . . . . . .  
+Firebase was used for user accounts and authentication, however since the Jamendo API lacks the functionality to dynamically create playlists - Playlist Curator creates playlists in Firebase also. It uses the users UID to identify the lists associated with them - then it holds some basic playlist info such as create date, genre, title, curator as well as each Jamendo track ID who’s details are then accessed from the Jamendo API.
+
+Google URL shortener is used to shorten the URL's before they get shared out on Social Media (Only Twitter implemented as I don’t have a Facebook account to test that one, but the implementation is the same - just properties on the link)
+
+
+
 
 ###Independent learning.
 
