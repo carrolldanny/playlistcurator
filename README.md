@@ -45,8 +45,6 @@ Use meaningful sample data. Briefly explain any non-trivial issues.
 
 ###App Design.
 
-A simple diagram showing the app's component design, in particular controllers and services (see example below).
-
 ![][image2]
 
 ###UI Design.
@@ -89,7 +87,7 @@ Google URL shortener is used to shorten the URL's before they get shared out on 
 + HTML5 Audio Player - standard feature of HTML5 but few soild for streaming audio files in an instance such as this.
 
 [image1]: ./model.png
-[image2]: ./design.png
+[image2]: http://dancar38.100webcustomers.com/screenshots/diag1.png
 [image3]: http://dancar38.100webcustomers.com/screenshots/create_playlist.png
 [image4]: http://dancar38.100webcustomers.com/screenshots/creating_list.png
 [image5]: http://dancar38.100webcustomers.com/screenshots/your_playlists.png
