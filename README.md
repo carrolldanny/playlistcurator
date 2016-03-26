@@ -39,8 +39,6 @@ and you should see the login page. The localhost IP address (127.0.0.1) will als
 
 ![][image1]
 
-Use meaningful sample data. Briefly explain any non-trivial issues.
-
 ###App Design.
 
 ![][image2]
