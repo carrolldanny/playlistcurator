@@ -85,7 +85,9 @@ Google URL shortener is used to shorten the URL's before they get shared out on 
 
 ###Independent learning.
 
-. . . . . State the non-standard aspects of Angular (or other related technologies) that you researched and applied in this assignment . . . . .  
++ ngCookies - I used this to store the uid of the logged in user so their previous playlists can be retrieved easily. It gets destroyed when they logout
++ ngNotify - This is used when a track is added or removed from a playlist - different classes demoting different action as are applied.
++ Angular Social Sharing - For sharing the created playlists with friends.
 
 [image1]: ./model.png
 [image2]: ./design.png
