@@ -37,8 +37,6 @@ and you should see the login page. The localhost IP address (127.0.0.1) will als
 
 ###Data Model Design.
 
-Diagram of app's data model (see example below) AND/OR a sample of the test data used (JSON or equivalent).
-
 ![][image1]
 
 Use meaningful sample data. Briefly explain any non-trivial issues.
@@ -86,7 +84,7 @@ Google URL shortener is used to shorten the URL's before they get shared out on 
 + Angular Social Sharing - For sharing the created playlists with friends.
 + HTML5 Audio Player - standard feature of HTML5 but few soild for streaming audio files in an instance such as this.
 
-[image1]: ./model.png
+[image1]: http://dancar38.100webcustomers.com/screenshots/data.png
 [image2]: http://dancar38.100webcustomers.com/screenshots/diag1.png
 [image3]: http://dancar38.100webcustomers.com/screenshots/create_playlist.png
 [image4]: http://dancar38.100webcustomers.com/screenshots/creating_list.png
