@@ -51,9 +51,17 @@ A simple diagram showing the app's component design, in particular controllers a
 
 ###UI Design.
 
-. . . . . Screenshots of app's views (see example below) with appropriate captions (excluding user regeneration and login views) . . . . . . . 
-
+Starting the playlist creation process - just pick the genre you want
 ![][image3]
+
+Adding songs to the list - give them a quick listen, remove them if you change your mind
+![][image4]
+
+Previous created playlists
+![][image4]
+
+Playing back a list and sharing it on Twitter
+![][image4]
 
 ###Routing.
 
@@ -74,6 +82,7 @@ A simple diagram showing the app's component design, in particular controllers a
 [image1]: ./model.png
 [image2]: ./design.png
 [image3]: http://dancar38.100webcustomers.com/screenshots/create_playlist.png
-[image4]: http://dancar38.100webcustomers.com/screenshots/create_playlist.png
-[image3]: http://dancar38.100webcustomers.com/screenshots/create_playlist.png
-[image6]: http://dancar38.100webcustomers.com/screenshots/create_playlist.png
+[image4]: http://dancar38.100webcustomers.com/screenshots/creating_list.png
+[image5]: http://dancar38.100webcustomers.com/screenshots/your_playlists.png
+[image6]: http://dancar38.100webcustomers.com/screenshots/share_playlist.png
+
