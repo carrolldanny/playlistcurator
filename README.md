@@ -84,9 +84,9 @@ Google URL shortener is used to shorten the URL's before they get shared out on 
 
 
 [image1]: /images/promotion/ss1.png
-[image2]: http://dancar38.100webcustomers.com/screenshots/diag1.png
-[image3]: http://dancar38.100webcustomers.com/screenshots/create_playlist.png
-[image4]: http://dancar38.100webcustomers.com/screenshots/creating_list.png
-[image5]: http://dancar38.100webcustomers.com/screenshots/your_playlists.png
-[image6]: http://dancar38.100webcustomers.com/screenshots/share_playlist.png
+[image2]: /images/promotion/ss2.png
+[image3]: /images/promotion/ss3.png
+[image4]: /images/promotion/ss4.png
+[image5]: /images/promotion/ss5.png
+[image6]: /images/promotion/ss6.png
 
