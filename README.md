@@ -82,7 +82,8 @@ Google URL shortener is used to shorten the URL's before they get shared out on 
 + Angular Social Sharing - For sharing the created playlists with friends.
 + HTML5 Audio Player - standard feature of HTML5 but few soild for streaming audio files in an instance such as this.
 
-[image1]: http://dancar38.100webcustomers.com/screenshots/data.png
+
+[image1]: /images/promotion/ss1.png
 [image2]: http://dancar38.100webcustomers.com/screenshots/diag1.png
 [image3]: http://dancar38.100webcustomers.com/screenshots/create_playlist.png
 [image4]: http://dancar38.100webcustomers.com/screenshots/creating_list.png
